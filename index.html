@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Anas - Data Analyst Portfolio</title>
+    <style>
+        /* Base reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header with animated gradient */
+        header {
+            background: linear-gradient(-45deg, #222, #2b2b63, #4e4eff, #1f1f1f);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        header h1 span {
+            margin-left: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 0.5s;
+        }
+
+        /* Section styling */
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            animation: fadeInUp 1s ease both;
+        }
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #4e4eff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Contact Links */
+        .contact a {
+            color: #4e4eff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #ff4e88;
+        }
+
+        /* Skills & Projects layout */
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill, .project {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            flex: 1 1 calc(50% - 15px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill:hover, .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mohd <span>Anas</span></h1>
+        <p>Data Analyst</p>
+    </header>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>📞 +91 7055813193 | 📍 Kairana, Shamli, U.P. (247774)</p>
+        <p>✉️ <a href="mailto:chouhananas7@gmail.com">chouhananas7@gmail.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/mohd-anas-bb8191322/">LinkedIn</a> | <a href="https://github.com/anaschouhan001">GitHub</a></p>
+    </section>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Motivated BCA graduate with a strong foundation in data analysis, visualization, and machine learning...</p>
+    </section>
+
+    <section>
+        <h2>Certificates</h2>
+        <ul>
+            <li>Internship Studio - Certificate of Completion of Data Analytics Training</li>
+            <li>Internship Studio - Certificate of Internship in Data Analytics</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p><strong>Bachelor of Computer Applications</strong> (2022-2025) - IIMT University</p>
+        <p><strong>Intermediate</strong> (2019-2021) - S.N. Inter College, Kairana</p>
+    </section>
+
+    <section>
+        <h2>Extra Curricular Activity</h2>
+        <ul>
+            <li>Data Science PPT Competition - Led a team at IIMT University</li>
+            <li>Math & Science Tutoring - Tutored underprivileged students</li>
+            <li>College Debate Competition - Topic: Importance of Internet Globally</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">Advanced MS Excel</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">DBMS</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project"><strong>Face Emotion Detection</strong> - Built a model to detect emotions.</div>
+            <div class="project"><strong>Zomato Clone</strong> - Developed a food delivery app.</div>
+            <div class="project"><strong>To-Do List App</strong> - Created a task manager.</div>
+            <div class="project"><strong>Flappy Bird Game</strong> - Designed a Flappy Bird clone.</div>
+            <div class="project"><strong>College Management System</strong> - Developed a system for academic management.</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mohd Anas | Data Analyst Portfolio</p>
+    </footer>
+</body>
+</html>

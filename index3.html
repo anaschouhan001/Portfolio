@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio - Anas Chouhan</title>
+<style>
+    /* ===== RESET & BASE ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #0d1117; color: #fff; scroll-behavior: smooth; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== NAVBAR ===== */
+    nav { position: fixed; top: 0; width: 100%; background: rgba(13,17,23,0.9); padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; backdrop-filter: blur(10px);}
+    nav ul { display: flex; gap: 20px; list-style: none; }
+    nav a:hover { color: #00d4ff; }
+
+    /* ===== HERO ===== */
+    .hero { height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 0 50px; }
+    .hero-text h1 { font-size: 50px; background: linear-gradient(90deg,#00d4ff,#7a5fff); -webkit-background-clip: text; color: transparent; animation: gradientShift 5s infinite alternate; }
+    .hero-text h2 { font-size: 24px; color: #ccc; margin-bottom: 20px; }
+    .btn { padding: 10px 20px; background: #00d4ff; color: #000; border-radius: 8px; font-weight: bold; transition: 0.3s; }
+    .btn:hover { background: #7a5fff; color: white; }
+    .hero-img img { width: 300px; border-radius: 50%; border: 5px solid #00d4ff; box-shadow: 0 0 30px #00d4ff; }
+
+    /* ===== SECTIONS ===== */
+    section { padding: 80px 50px; max-width: 1100px; margin: auto; }
+    section h2 { font-size: 32px; margin-bottom: 20px; text-align: center; color: #00d4ff; }
+    .content { display: grid; gap: 15px; }
+    .card { background: #161b22; padding: 20px; border-radius: 10px; transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(0,212,255,0.3); }
+
+    /* ===== CONTACT ===== */
+    .contact-icons { display: flex; gap: 15px; justify-content: center; margin-top: 15px; }
+    .contact-icons a { font-size: 24px; color: #00d4ff; transition: 0.3s; }
+    .contact-icons a:hover { color: #7a5fff; }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes gradientShift { 0% {background-position: left;} 100% {background-position: right;} }
+    [data-animate] { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
+    [data-animate].active { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        .hero { flex-direction: column; text-align: center; gap: 20px; }
+        .hero-img img { width: 200px; }
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+    <h2>My Portfolio</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="hero-text" data-animate>
+        <h1>Anas Chouhan</h1>
+        <h2>Data Analyst</h2>
+        <a href="#projects" class="btn">Discover My Work</a>
+        <a href="resume.pdf" class="btn" style="margin-left:10px;">Download Resume</a>
+    </div>
+    <div class="hero-img" data-animate>
+        <img src="C:\Users\chouh\OneDrive\Desktop\portfolio\Personal Portfolio\image\image.png" alt="Profile Picture">
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="content" data-animate>
+        <p>I am a passionate Data Analyst with skills in Python, SQL, Excel, Power BI, and data visualization. I enjoy turning data into meaningful insights.</p>
+    </div>
+</section>
+
+<!-- ===== CERTIFICATES ===== -->
+<section id="certificates">
+    <h2>Certificates</h2>
+    <div class="content" data-animate>
+        <div class="card">📜 Certificate 1 - XYZ Institute</div>
+        <div class="card">📜 Certificate 2 - ABC Platform</div>
+    </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="content" data-animate>
+        <div class="card">🎓 B.Sc. in Computer Science - XYZ University (2020-2023)</div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="content" data-animate>
+        <div class="card">Python, SQL, Excel, Power BI, Tableau</div>
+        <div class="card">Data Cleaning, Data Visualization, Dashboard Creation</div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="content" data-animate>
+        <div class="card">📊 Sales Data Dashboard - Power BI</div>
+        <div class="card">🤖 Emotion Detection through Facial Expressions - Python</div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p style="text-align:center;">📍 Indore, India | 📞 +91-1234567890 | ✉️ anas@example.com</p>
+    <div class="contact-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="mailto:anas@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+</section>
+
+<script>
+    // Scroll Reveal Animation
+    const elements = document.querySelectorAll("[data-animate]");
+    window.addEventListener("scroll", () => {
+        const triggerBottom = window.innerHeight * 0.85;
+        elements.forEach(el => {
+            const boxTop = el.getBoundingClientRect().top;
+            if (boxTop < triggerBottom) el.classList.add("active");
+        });
+    });
+</script>
+
+</body>
+</html>
